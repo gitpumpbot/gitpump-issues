@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://gitpump.com/docs
+    about: Read the full GitPump documentation
+  - name: Show and Tell
+    url: https://github.com/orgs/gitpumpbot/discussions/categories/show-and-tell
+    about: Share a token you launched with GitPump

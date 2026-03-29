@@ -1,0 +1,54 @@
+name: Bug Report
+description: Something is not working as expected
+title: '[Bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report a bug. Please fill in as much detail as possible.
+  - type: input
+    id: what
+    attributes:
+      label: What happened?
+      placeholder: Describe the bug clearly
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: What should have happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Installed GitPump on repo...
+        2. Posted /pumpfun comment...
+        3. Bot replied with...
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repo where the issue occurred (optional)
+      placeholder: owner/repo-name
+  - type: input
+    id: username
+    attributes:
+      label: Your GitHub username (optional)
+      placeholder: octocat
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform were you launching on?
+      options:
+        - Pump.fun
+        - Bags.fm
+        - Clanker
+        - Four.meme
+        - Not a launch issue
+    validations:
+      required: true
